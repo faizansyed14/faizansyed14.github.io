@@ -272,6 +272,8 @@ section .title::after{
     color:#fff;
     background: #111;
 }
+
+
 .services .title::before,
 .teams.title::before{
     background: #fff;
@@ -279,7 +281,7 @@ section .title::after{
 .services .title::after,
  .title::after{
     background: #111;
-    content: "what i studied";
+    content: "Knowledge";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -320,15 +322,10 @@ section .title::after{
     justify-content: center;
     display:block;
 }
-.ten{
-    width: 150px;
+.projimgs{
+    width: 100%;
   }
-  .ms{
-    width: 200px;
-  }
-  .jbiet{
-    width: 150px;
-  }
+ 
 
 .para{
     font-size: 18px;
@@ -577,6 +574,7 @@ footer{
         font-size: 25px;
         color: #fff;
     }
+
     .home .home-content .text-2{
         font-size: 70px;
     }
@@ -631,6 +629,10 @@ footer{
 }
 
 @media (max-width: 500px) {
+
+    .home{
+        background:url("img/R2.jpg");
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
@@ -678,7 +680,7 @@ footer{
             width: 20px;
             margin: 0 5px;
             overflow: hidden;
-            background: rgb(255, 255, 255);
+            background: rgb(34, 14, 14);
             border-radius: 50px;
             cursor: pointer;
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -688,9 +690,16 @@ footer{
     }
     @media (max-width: 400px) {
     .wrapper{
-        font-size: 18px;
-        line-height: 40px;
+        display: flex;
+        font-size: 15px;
+        line-height: 30px;
         transition: all 0.3s ease-out;
+    }
+    .wrapper .button .icon i {
+        font-size: 20px;
+        align-items: center;
+        padding-right: 10px;
+        
     }
 
 }
